@@ -1,0 +1,235 @@
+body{
+background-color:#f3f3f3;
+}
+
+#header{
+    background: #792BB9 none repeat scroll 0% 0%;
+    color: #FFF;
+    min-height: 60px;
+    position: relative;
+    z-index: 2px;
+}
+
+#header .logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px 0px 0px 20px;
+    line-height: 58px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.pageContent {
+    margin: 0px 12px;
+}
+
+#header .topNavigation {
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+
+.badge {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #FE5621 none repeat scroll 0% 0%;
+    color: #FFF;
+    text-align: center;
+    padding: 0px;
+    line-height: 18px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#header .topNavigation li {
+    list-style-type: none;
+    padding: 10px 0px;
+    display: inline-block;
+}
+
+#header .topNavigation li a .badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#header .topNavigation li a {
+    color: #FFF;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+#header .topNavigation li a .icon {
+    font-size: 2.4rem;
+    line-height: 40px;
+}
+
+.sidebarleft{
+border-right: 1px solid #f3f3f3;
+height:100%;
+min-height:100%;
+background: #FFF none repeat scroll 0% 0%;
+padding-right: 0px;
+
+}
+
+.photoprofil .photoprofil_a{
+display:block;
+}
+
+.sidebarleft{
+width:210px;
+}
+
+.photoprofil .name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 0px 20px 0px 0px;
+    z-index: 1;
+}
+
+.panel_content{
+    padding-top:2%;
+}
+
+.simpleList > ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.simpleList > ul > li {
+    border-bottom: 1px solid #E6E7ED;
+    list-style-type: none;
+    display: block;
+}
+
+.simpleList > ul > li > a .icon, .simpleList > ul > li div .icon {
+    color: #9DA2A6;
+    font-size: 2rem;
+    vertical-align: middle;
+    margin: 0px 12px 0px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.simpleList > ul > li > a, .simpleList > ul > li div {
+     display: block;
+    font-weight: bold;
+    padding: 15px 18px 15px 15px;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0px none;
+    text-decoration: none;
+    color: #363F45;
+}
+
+.simpleList > ul > li:hover > a{
+    background:#f3f3f3 none repeat scroll 0% 0%;
+    color: #FE5621;
+}
+
+.simpleList > ul > li > a{
+    background:  none repeat scroll 0% 0%;
+    color: #333;
+}
+
+.card {
+    position: relative;
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    padding:1.5%;
+    height:245px;
+}
+
+.card_search {
+    position: relative;
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    padding:1.5%;
+
+}
+
+.header_card{
+height:165px;
+-webkit-transition: background-color 200ms ease-out 0.1s;
+-moz-transition: background-color 200ms ease-out 0.1s;
+-o-transition: background-color 200ms ease-out 0.1s;
+transition: background-color 200ms ease-out 0.1s;
+}
+
+.header_card:hover{
+height:165px;
+background-color:#f3f3F3;
+}
+
+.body_card{
+height:55px;
+display:inline-block;
+overflow:hidden;
+width:165px;
+}
+
+.body_card .title {
+    color: #212121;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.body_card .subtitle {
+    color: #616161;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 1px 0px;
+    max-width: 132px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.footer_card{
+height:20px;
+display: table-cell;
+vertical-align: bottom;
+padding-bottom:2%;
+}
+.moteur_search{
+    padding:1%;
+}
+
+.search{
+font-size:20px;
+}
+
+.panel_card{
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.paragraph-end {
+    background: transparent linear-gradient(to right, rgba(255, 255, 255, 0), #FFF) repeat scroll 0% 0%;
+    bottom: 0px;
+    height: 25px;
+    max-height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 60px;
+}
+
+.paragraph-end {
+    height: 19px;
+    width: 45px;
+}

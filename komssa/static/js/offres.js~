@@ -1,0 +1,56 @@
+
+$('.deleteoffre').on('click', function(){
+   
+   offreid=$(this).attr('offreid');   
+   
+   //on ajoute charge les valeurs à supprimer dans le du formulaire  
+   $('[name="idoffretodel"]').empty().val(offreid);
+   $('.theoffre').addClass('animated bounceOutUp').fadeOut();
+   $('.deloffre').show();
+   
+   //si on annule on revient sur la liste des compétences
+   $('.rollbackoffre').on('click', function(){
+     $('.theoffre').removeClass('animated bounceOutUp').fadeIn(500);
+     $('.deloffre').hide()
+   });
+   
+});
+
+$('.modifoffre').on('click', function(){
+   
+    var offreid=$(this).attr('offreid');
+   
+   //on se lance une requête ajax pour reccuperer les infos sur une annonce
+   
+          $.ajax({
+                
+                url: '/infoffre/',
+                type: 'GET',
+                data: 'offreid='+offreid ,
+                dataType: 'json', // JSON
+                success: function(json) {
+                    alert(offre.id)
+                }
+                
+            });
+   
+ //  var nom = $('.nomoffre'+offreid).text();
+  // var description =  $('.descriptionoffre'+loisirid).text();
+   
+   //on ajoute charge les valeurs à modifier dans les champs du formulaire
+      // $('.modoffrenom').empty().val(nom);
+     //  $('.modoffredescription').empty().val(description);
+     //  $('.idthisoffre').empty().val(loisirid);
+  
+       $('.theoffre').addClass('animated bounceOutUp').fadeOut();
+       $('.modoffre').show();
+       
+   //si on annule on revient sur la liste des langues
+       $('.rollbackoffre').on('click', function(){    
+       $('.theoffre').removeClass('animated bounceOutUp').fadeIn(500);
+       $('.modoffre').hide();
+   });
+   
+});
+
+
